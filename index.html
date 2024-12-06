@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes Quest Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #005a3c;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Increased size for images */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item {
+      position: relative;
+    }
+
+    .gallery-item::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 10px;
+    }
+
+    .gallery-item:hover::after {
+      opacity: 0.5;
+    }
+
+    .gallery-item p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 18px;
+      color: #333; /* Changed text color to a darker shade */
+      font-weight: bold;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.6); /* Added background for better contrast */
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #005a3c;
+      color: white;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Heroes Quest at Stephenstown Pond</h1>
+  <p>Celebrating the rich heritage of Cúchulainn and Táin Bó Cúailnge</p>
+</header>
+
+<div class="gallery">
+  <!-- Gallery items with images and captions -->
+  <div class="gallery-item">
+    <img src="photos/photo1.jpg" alt="Heroes Quest 1">
+    <p>Exploring Irish Mythology</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo2.jpg" alt="Heroes Quest 2">
+    <p>Creativity in action</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo3.jpg" alt="Heroes Quest 3">
+    <p>Crafting memories</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo4.jpg" alt="Heroes Quest 4">
+    <p>Learning with nature</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo5.jpg" alt="Heroes Quest 5">
+    <p>The magic of storytelling</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo6.jpg" alt="Heroes Quest 6">
+    <p>Beautiful moments by the pond</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo7.jpg" alt="Heroes Quest 7">
+    <p>Inspiring young minds</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo8.jpg" alt="Heroes Quest 8">
+    <p>The adventure unfolds</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo9.jpg" alt="Heroes Quest 9">
+    <p>Outdoor Learning</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo10.jpg" alt="Heroes Quest 10">
+    <p>Field-based learning</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo11.jpg" alt="Heroes Quest 11">
+    <p>Exploring heritage through play</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo12.jpg" alt="Heroes Quest 12">
+    <p>Learning in the great outdoors</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo13.jpg" alt="Heroes Quest 13">
+    <p>Inspiring creativity through craft</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo14.jpg" alt="Heroes Quest 14">
+    <p>Art that tells a story</p>
+  </div>
+  <!-- Dressed up in character -->
+  <div class="gallery-item">
+    <img src="photos/photo15.jpg" alt="Heroes Quest 15">
+    <p>Our heroes in costume</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo16.jpg" alt="Heroes Quest 16">
+    <p>Bringing mythology to life</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo17.jpg" alt="Heroes Quest 17">
+    <p>Meet the legendary characters</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo18.jpg" alt="Heroes Quest 18">
+    <p>Living history through costume</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo19.jpg" alt="Heroes Quest 19">
+    <p>Interactive storytelling with characters</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo20.jpg" alt="Heroes Quest 20">
+    <p>Immersive experiences</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo21.jpg" alt="Heroes Quest 21">
+    <p>Characters bringing Irish myths to life</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo22.jpg" alt="Heroes Quest 22">
+    <p>Heroes in action!</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo23.jpg" alt="Heroes Quest 23">
+    <p>The magic of ancient stories</p>
+  </div>
+  <div class="gallery-item">
+    <img src="photos/photo24.jpg" alt="Heroes Quest 24">
+    <p>Epic tales unfolding in real-time</p>
+  </div>
+</div>
+
+<footer>
+  <p>Project supported by Creative Ireland, Healthy Louth, and Dundalk Youth Centre</p>
+</footer>
+
+</body>
+</html>
